@@ -11,16 +11,20 @@ body{
 }
 
 .card-container{
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  justify-content:space-evenly; */
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   
 }
 .card{
   margin: 40px;
+  padding: 10px;
   border: 2px solid white;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 350px;
   text-align: center;
   border-radius: 10px;
   background-color: #222;
@@ -28,20 +32,27 @@ body{
 }
 
 .card img{
-  height: 140px;
+  height: 200px;
   width: 140px;
   object-fit: cover;
-  border-radius: 50%;
-  margin: 20px;
+  border-radius: 20px;
+  margin: 30px;
   cursor: pointer;
 }
 
+.card h1{
+  font-size: larger;
+}
+.card h4{
+  margin: 20px;
+}
 .card p{
-  margin-top: 10px;
+  margin-top: 15px;
   font-style: italic;
 }
+
 .card button{
-  margin: 20px;
+  margin: 25px;
   padding: 10px 20px;
   background-color: white;
   border: none;
